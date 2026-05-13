@@ -20,7 +20,7 @@ export const WordReveal: React.FC<WordRevealProps> = ({
   const words = text.split(" ");
 
   return (
-    <div style={{ display: "flex", flexWrap: "wrap", gap: "0.2em", ...style }}>
+    <div style={{ display: "flex", flexWrap: "wrap", gap: "0.32em", ...style }}>
       {words.map((word, i) => {
         const lf = frame - startFrame - i * staggerFrames;
         const opacity = interpolate(lf, [0, 12], [0, 1], {

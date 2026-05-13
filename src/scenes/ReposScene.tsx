@@ -1,5 +1,4 @@
 import React from "react";
-import { loadFont } from "@remotion/google-fonts/Inter";
 import {
   AbsoluteFill,
   Easing,
@@ -19,10 +18,7 @@ import {
   SAFE_X,
 } from "../constants";
 
-const { fontFamily } = loadFont("normal", {
-  weights: ["400", "600", "700", "900"],
-  subsets: ["latin"],
-});
+const fontFamily = 'system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif';
 
 interface Repo {
   owner: string;

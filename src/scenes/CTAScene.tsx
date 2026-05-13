@@ -1,5 +1,4 @@
 import React from "react";
-import { loadFont } from "@remotion/google-fonts/Inter";
 import {
   AbsoluteFill,
   Easing,
@@ -19,10 +18,7 @@ import {
 } from "../constants";
 import { WordReveal } from "../components/WordReveal";
 
-const { fontFamily } = loadFont("normal", {
-  weights: ["400", "700", "900"],
-  subsets: ["latin"],
-});
+const fontFamily = 'system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif';
 
 export const CTAScene: React.FC = () => {
   const frame = useCurrentFrame();

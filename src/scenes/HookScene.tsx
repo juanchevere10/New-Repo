@@ -1,5 +1,4 @@
 import React from "react";
-import { loadFont } from "@remotion/google-fonts/Inter";
 import {
   AbsoluteFill,
   Easing,
@@ -11,10 +10,7 @@ import {
 import { CYAN_BRIGHT, GRAY, PURPLE, PURPLE_BRIGHT, SAFE_BOTTOM, SAFE_TOP, SAFE_X } from "../constants";
 import { WordReveal } from "../components/WordReveal";
 
-const { fontFamily } = loadFont("normal", {
-  weights: ["400", "700", "900"],
-  subsets: ["latin"],
-});
+const fontFamily = 'system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif';
 
 export const HookScene: React.FC = () => {
   const frame = useCurrentFrame();
