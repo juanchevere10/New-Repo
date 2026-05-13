@@ -1,0 +1,21 @@
+{
+  "name": "new-repo",
+  "version": "0.0.1",
+  "description": "Remotion video project",
+  "scripts": {
+    "start": "remotion studio",
+    "build": "remotion render",
+    "upgrade": "remotion upgrade"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.290",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "remotion": "4.0.290"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "5.4.3"
+  }
+}
