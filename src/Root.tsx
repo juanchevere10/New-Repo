@@ -1,20 +1,17 @@
+import React from "react";
 import { Composition } from "remotion";
-import { HelloWorld } from "./HelloWorld";
+import { GithubSkillsVideo, TOTAL_FRAMES } from "./GithubSkillsVideo";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
       <Composition
-        id="HelloWorld"
-        component={HelloWorld}
-        durationInFrames={150}
+        id="GithubSkillsVideo"
+        component={GithubSkillsVideo}
+        durationInFrames={TOTAL_FRAMES}
         fps={30}
-        width={1920}
-        height={1080}
-        defaultProps={{
-          titleText: "Hello World",
-          titleColor: "#000000",
-        }}
+        width={1080}
+        height={1920}
       />
     </>
   );
